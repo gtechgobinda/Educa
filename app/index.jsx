@@ -1,6 +1,6 @@
 import { Link } from "expo-router";
 import React from "react";
-import { View, Text, TextInput, Button, StyleSheet } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
 
 const Home = () => {
   return (
@@ -9,13 +9,21 @@ const Home = () => {
       <TextInput
         style={styles.input}
         placeholder="Email"
+        placeholderTextColor="#aaa"
         keyboardType="email-address"
         autoCapitalize="none"
       />
-      <TextInput style={styles.input} placeholder="Password" secureTextEntry />
-      <Link href="/course" style={styles.btn}>
-        <Text style={styles.text}>LOGIN</Text>
-      </Link>
+      <TextInput
+        style={styles.input}
+        placeholder="Password"
+        placeholderTextColor="#aaa"
+        secureTextEntry
+      />
+      <TouchableOpacity style={styles.btn}>
+        <Link href="/course">
+          <Text style={styles.btnText}>LOGIN</Text>
+        </Link>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -24,27 +32,43 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
+    alignItems: "center",
     paddingHorizontal: 16,
+    backgroundColor: "#f0f0f0",
   },
   title: {
-    fontSize: 24,
-    marginBottom: 16,
+    fontSize: 28,
+    marginBottom: 20,
     textAlign: "center",
+    color: "#333",
   },
   input: {
-    height: 40,
-    borderColor: "gray",
+    width: '80%',
+    height: 50,
+    borderColor: "#ccc",
     borderWidth: 1,
-    marginBottom: 12,
-    paddingHorizontal: 8,
+    borderRadius: 8,
+    marginBottom: 16,
+    paddingHorizontal: 10,
+    backgroundColor: "#fff",
+    fontSize: 16,
+    color: "#333",
   },
   btn: {
-    height: 40,
-    backgroundColor: "#d4d4d4",
-    color: "#000000",
-    textAlign: "center",
-    fontSize: 20,
+    width: '80%',
+    height: 50,
+    backgroundColor: "#007bff",
+    borderRadius: 8,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 20,
+  },
+  btnText: {
+    color: "#fff",
+    fontSize: 18,
+    fontWeight: "bold",
   },
 });
 
 export default Home;
+
