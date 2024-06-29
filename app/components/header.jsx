@@ -4,7 +4,9 @@ import { Ionicons } from '@expo/vector-icons';
 const Header = ({ toggleSidebar }) => {
   return (
     <View style={styles.header}>
-      <TouchableOpacity style={styles.menuButton} onPress={toggleSidebar}>
+      <TouchableOpacity style={styles.menuButton} 
+      // onPress={toggleSidebar}
+      >
         <Ionicons name="menu" size={24} color="white" />
       </TouchableOpacity>
       <Text style={styles.title}>Course</Text>

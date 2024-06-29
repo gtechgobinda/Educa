@@ -32,7 +32,7 @@ const CourseContent = () => {
             <Text style={styles.courseTitle}>SPJIMR</Text>
             <Text style={styles.courseDescription}>MBA</Text>
             <Text style={styles.courseText}>
-              An MBA course opted by you will hello
+              An MBA course opted
             </Text>
             <View style={styles.actionBtn}>
             <Text style={styles.viewDetails}>
@@ -53,7 +53,7 @@ const CourseContent = () => {
             <Text style={styles.courseTitle}>SPJIMR</Text>
             <Text style={styles.courseDescription}>MBA</Text>
             <Text style={styles.courseText}>
-              An MBA course opted by you will hello
+              An MBA course opted
             </Text>
             <View style={styles.actionBtn}>
             <Text style={styles.viewDetails}>
@@ -74,7 +74,7 @@ const CourseContent = () => {
             <Text style={styles.courseTitle}>SPJIMR</Text>
             <Text style={styles.courseDescription}>MBA</Text>
             <Text style={styles.courseText}>
-              An MBA course opted by you will hello
+              An MBA course opted
             </Text>
             <View style={styles.actionBtn}>
             <Text style={styles.viewDetails}>
@@ -94,17 +94,17 @@ const CourseContent = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    // backgroundColor: "#fff",
   },
   image1: {
-    width: "450px",
+    width: "300px",
     height: 170,
     marginTop: 10,
   },
   searchContainer: {
     flexDirection: "row",
     alignItems: "center",
-    paddingHorizontal: 20,
+    paddingHorizontal: 40,
     marginTop: 20,
     marginBottom: 10,
   },
@@ -128,9 +128,11 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginLeft: 20,
     marginBottom: 10,
+    paddingHorizontal: 30,
   },
   coursesContainer: {
-    paddingHorizontal: 20,
+    paddingHorizontal:40,
+
   },
   courseCard: {
     backgroundColor: "#fff",
@@ -147,7 +149,8 @@ const styles = StyleSheet.create({
     elevation: 5,
     display:'flex',
     flexDirection:'row',
-    gap:10
+    gap:10,
+    width:320
   },
   courseImage: {
     width: 100,
