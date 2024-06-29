@@ -8,6 +8,8 @@ const TabsLayout = () => {
       <Tabs>
         <Tabs.Screen name="course" options={{ headerShown: false }}/>
         <Tabs.Screen name="college" options={{ headerShown: false }}/>
+        <Tabs.Screen name="liveClass" options={{ headerShown: false }}/>
+        <Tabs.Screen name="question" options={{ headerShown: false }}/>
       </Tabs>
     </>
   );

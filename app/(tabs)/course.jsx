@@ -21,8 +21,7 @@ const Course = () => {
       )}
       <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
       <View style={styles.content}>
-        <Text>_layout</Text>
-        <Link href="/college">College</Link>
+        <Text>COURSE HELLOOOOO</Text>
       </View>
     </SafeAreaView>
   );
