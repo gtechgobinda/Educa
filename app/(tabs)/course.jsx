@@ -5,6 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Link, Tabs } from "expo-router";
 import Header from "../components/header.jsx";
 import Sidebar from "../components/sidebar.jsx";
+import CourseContent from "../components/courseContent.jsx";
 
 const Course = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -21,7 +22,8 @@ const Course = () => {
       )}
       <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
       <View style={styles.content}>
-        <Text>COURSE HELLOOOOO</Text>
+        {/* <Text>COURSE HELLOOOOO</Text> */}
+        <CourseContent/>
       </View>
     </SafeAreaView>
   );
