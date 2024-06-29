@@ -6,8 +6,7 @@ const TabsLayout = () => {
   return (
     <>
       <Tabs>
-        <Tabs.Screen name="course" options={{ headerShown: false }}/>
-        <Tabs.Screen name="college" options={{ headerShown: false }}/>
+        <Tabs.Screen name="home" />
       </Tabs>
     </>
   );
