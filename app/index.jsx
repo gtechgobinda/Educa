@@ -1,10 +1,13 @@
+
 import React from "react";
 import { View } from "react-native";
 
 const App = () => {
   return (
     <>
-      <View>_layout</View>
+      <View>
+        _layout
+      </View>
     </>
   );
 };

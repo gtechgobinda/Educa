@@ -5,6 +5,7 @@ import Header from './components/header.jsx';
 import Sidebar from './components/sidebar.jsx';
 
 
+
 const RootLayout = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
@@ -23,6 +24,7 @@ const RootLayout = () => {
       <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
       <View style={styles.content}>
         <Text>_layout</Text>
+      
       </View>
     </SafeAreaView>
   );

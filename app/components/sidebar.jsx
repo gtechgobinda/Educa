@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
@@ -5,6 +6,7 @@ const Sidebar = ({ isOpen, onClose }) => {
   return (
     <View style={[styles.sidebar, isOpen ? styles.sidebarOpen : styles.sidebarClosed]}>
       <Text style={styles.sidebarContent}>Sidebar Content</Text>
+
     </View>
   );
 };
